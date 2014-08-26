@@ -2,6 +2,12 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Application Offline for Maintenance</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $( document ).ready(function() {
+      $(".timestamp").html(new Date());
+    });
+  </script>
   <style type="text/css"> 
     body {
       background-color: white;
@@ -34,6 +40,7 @@
     <div class="section">
       <h1>The Application had some problem</h1>
       <div class="article">
+        <p class="timestamp"> </p>
         <p>Please check agian later or <a href = 'https://qa-mqtt.herokuapp.com/'>click here</a></p>
       </div>
     </div>
