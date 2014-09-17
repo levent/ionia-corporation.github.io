@@ -4,11 +4,10 @@
   <title>Application Offline for Maintenance</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript">
-    $( document ).ready(function() {
-      $(".timestamp").html(new Date());
-    });
-  </script>
-  <style type="text/css"> 
+    setTimeout(function(){
+       window.location.replace('/');
+    }, 10000);  </script>
+  <style type="text/css">
     body {
       background-color: #4c4c4c;
       color: white;
@@ -49,8 +48,8 @@
       <img alt="New England Biolabs: Reagents for the Life Sciences Industry" src="https://www.neb.com/~/media/NebUs/Navigation/logo-NEB.png">
       <h1>NEBNow has experienced a connection issue.</h1>
       <div class="article">
-        <p class="timestamp"> </p>
-        <p>Please check again later or  <a href = 'https://qa-mqtt.herokuapp.com/'>click here to reconnect</a></p>
+        <p class="timestamp"> 500 Error </p>
+        <p>The system will reconnect automatically in a few moments, or you can <a href = 'https://qa-mqtt.herokuapp.com/'>click here</a> to reconnect immediately.</p>
       </div>
     </div>
 </body>
