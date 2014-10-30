@@ -2,6 +2,12 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>Application Offline for Maintenance</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    setTimeout(function(){
+      window.top.location.href = 'https://prod-mqtt.herokuapp.com/last_action'
+    }, 3000);
+  </script>
   <style type="text/css">
     body {
       background-color: #4c4c4c;
@@ -56,7 +62,7 @@
       <h1>NEBnow Scheduled maintenance</h1>
       <div class="article">
         <p>This NEBnow kiosk is temporarily offline for scheduled maintenance.  </p>
-        <p>You will be notified by email as soon as access to this Unit becomes available.  </p>
+        <p>The system will reconnect automatically, and you will be notified by email as soon as access to this Unit becomes available.</p>
         <p>NEB appreciates your patience during this system upgrade. </p>
       </div>
     </div>
